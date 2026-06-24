@@ -3,17 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+  }
+
+  .crop {
+    width: 350px;      /* larghezza dell’area visibile */
+    height: 250px;     /* altezza dell’area visibile */
+    overflow: hidden;  /* nasconde il resto dell’immagine */
+    position: relative;
+  }
+
   .zoom-img {
-    width: 300px;
+    position: absolute;
+    top: -120px;       /* sposta l’immagine verso l’alto */
+    left: -200px;      /* sposta l’immagine verso sinistra */
     transition: transform 0.3s ease;
   }
-  .zoom-img:hover {
+
+  .crop:hover .zoom-img {
     transform: scale(1.3);
   }
 </style>
 </head>
 <body>
-<img src="https://raw.githubusercontent.com/Elisa008/Notion-hover/main/msedge_MM4rzhZeYv.png" class="zoom-img" alt="immagine">
+
+<div class="crop">
+  <img src="https://raw.githubusercontent.com/Elisa008/Notion-hover/main/msedge_MM4rzhZeYv.png" class="zoom-img" alt="immagine">
+</div>
 
 </body>
 </html>
