@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: black;
+  }
+
+  .crop {
+    width: 297mm;                 /* MOSTRA TUTTA L’IMMAGINE */
+    height: 210mm;
+    overflow: hidden;
+
+    background-image: url("https://raw.githubusercontent.com/Elisa008/Notion-hover/main/msedge_yxiK9aqFTw.png");
+    background-repeat: no-repeat;
+    background-size: 1000px auto;     /* immagine intera */
+    background-position: center top;  /* centrata */
+
+    transition: all 0.3s ease;
+  }
+
+  .crop:hover {
+    background-size: 1400px auto;     /* zoom */
+    background-position: center -400px; /* SOLO LA PARTE SOTTO */
+  }
+</style>
+</head>
+<body>
+
+<div class="crop"></div>
+
+</body>
+</html>
