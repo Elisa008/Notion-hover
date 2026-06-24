@@ -9,20 +9,23 @@
     background: transparent;
   }
 
+  /* Area visibile (ritaglio) */
   .crop {
-    width: 350px;      /* larghezza dell’area visibile */
-    height: 250px;     /* altezza dell’area visibile */
-    overflow: hidden;  /* nasconde il resto dell’immagine */
+    width: 420px;      /* larghezza della parte visibile */
+    height: 260px;     /* altezza della parte visibile */
+    overflow: hidden;
     position: relative;
   }
 
+  /* Immagine originale posizionata per mostrare solo la parte cerchiata */
   .zoom-img {
     position: absolute;
-    top: -120px;       /* sposta l’immagine verso l’alto */
-    left: -200px;      /* sposta l’immagine verso sinistra */
+    top: -140px;       /* sposta l'immagine verso l'alto */
+    left: -310px;      /* sposta l'immagine verso sinistra */
     transition: transform 0.3s ease;
   }
 
+  /* Zoom al passaggio del mouse */
   .crop:hover .zoom-img {
     transform: scale(1.3);
   }
