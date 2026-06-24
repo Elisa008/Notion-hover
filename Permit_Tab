@@ -10,7 +10,7 @@
   }
 .crop {
     overflow: hidden;
-    background-image: url("https://raw.githubusercontent.com/Elisa008/Notion-hover/main/msedge_MM4rzhZeYv.png");
+    background-image: url("https://raw.githubusercontent.com/Elisa008/Notion-hover/main/msedge_yxiK9aqFTw.png");
     background-repeat: no-repeat;
     background-size: 1200px auto;   /* quanto “grande” è l’immagine */
     background-position: -250px -200px; /* QUA si decide cosa si vede */
