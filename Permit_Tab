@@ -8,17 +8,23 @@
     padding: 0;
     background: black;
   }
-.crop {
+
+  .crop {
+    width: 297mm;                 /* MOSTRA TUTTA L’IMMAGINE */
+    height: 210mm;
     overflow: hidden;
+
     background-image: url("https://raw.githubusercontent.com/Elisa008/Notion-hover/main/msedge_yxiK9aqFTw.png");
     background-repeat: no-repeat;
-    background-size: 1200px auto;   /* quanto “grande” è l’immagine */
-    background-position: -250px -200px; /* QUA si decide cosa si vede */
-    transition: transform 0.3s ease;
+    background-size: 1000px auto;     /* immagine intera */
+    background-position: center top;  /* centrata */
+
+    transition: all 0.3s ease;
   }
 
   .crop:hover {
-    transform: scale(1.9);
+    background-size: 1400px auto;     /* zoom */
+    background-position: center -400px; /* SOLO LA PARTE SOTTO */
   }
 </style>
 </head>
