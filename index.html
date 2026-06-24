@@ -11,21 +11,21 @@
 
   /* Area visibile (ritaglio) */
   .crop {
-    width: 420px;      /* larghezza della parte visibile */
-    height: 260px;     /* altezza della parte visibile */
+    width: 420px;      /* larghezza area visibile */
+    height: 260px;     /* altezza area visibile */
     overflow: hidden;
     position: relative;
+    border: 0;
   }
 
-  /* Immagine originale posizionata per mostrare solo la parte cerchiata */
+  /* Immagine: prima la facciamo vedere, poi la spostiamo piano piano */
   .zoom-img {
     position: absolute;
-    top: -140px;       /* sposta l'immagine verso l'alto */
-    left: -310px;      /* sposta l'immagine verso sinistra */
+    top: 0px;          /* partiamo da 0, così la vedi di sicuro */
+    left: 0px;
     transition: transform 0.3s ease;
   }
 
-  /* Zoom al passaggio del mouse */
   .crop:hover .zoom-img {
     transform: scale(1.3);
   }
@@ -34,7 +34,8 @@
 <body>
 
 <div class="crop">
-  <img src="https://raw.githubusercontent.com/Elisa008/Notion-hover/main/msedge_MM4rzhZeYv.png" class="zoom-img" alt="immagine">
+  <img src="https://raw.githubusercontent.com/Elisa008/Notion-hover/main/msedge_MM4rzhZeYv.png"
+       class="zoom-img" alt="immagine">
 </div>
 
 </body>
