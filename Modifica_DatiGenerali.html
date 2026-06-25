@@ -7,11 +7,12 @@
     margin: 0;
     padding: 0;
     background: black;
+    overflow-x: hidden; /* evita scroll orizzontale */
   }
 
   img {
-    width: 100%;
-    height: auto;
+    max-width: 100%;   /* si adatta all’iframe */
+    height: auto;      /* mantiene proporzioni */
     display: block;
   }
 
