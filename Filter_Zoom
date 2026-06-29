@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* Contenitore dell’immagine intera */
+  .image-wrapper {
+    position: relative;
+    width: 1530px;
+    height: 759px;
+  }
+
+  .image-wrapper img {
+    width: 100%;
+  }
+
+  /* Riquadro invisibile sopra la sezione Filtri 
+  .zoom-area {
+    position: absolute;
+    top: -209px;      
+    left: -130px;     
+    width: -1711px;  
+    height: -152px; 
+    overflow: hidden;
+    pointer-events: auto;
+  }*/
+
+  /* L’immagine dentro il riquadro */
+  .zoom-area img {
+    position: absolute;
+    width: 1369px; 
+    height: 124px;
+    top: 65px;
+    left: 165px;
+    transition: transform 0.3s ease;
+    transform-origin: top left; 
+  }
+
+  /* Effetto zoom SOLO quando il mouse entra nel riquadro */
+  .zoom-area:hover img {
+    transform: scale(1.4);
+  }
+</style>
+</head>
+
+<body>
+  <div class="image-wrapper">
+   <img url("https://raw.githubusercontent.com/Elisa008/Notion-hover/main/msedge_wQhYcy5nKI.png")>
+<div class="zoom-area">
+      <img url("https://raw.githubusercontent.com/Elisa008/Notion-hover/main/msedge_toyZhp3Szm.png")  >
+</div>
+  </div>
+</body>
+</html>
